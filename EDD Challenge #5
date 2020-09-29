@@ -1,0 +1,35 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+using namespace std;
+
+int main() {
+    
+    string a;
+    cin >> a;
+    int x = 0;
+    float y;
+    
+    if(a != ""){
+        cout << "{";
+        for(int i = 0; a != ""; i++) {
+        
+            stringstream geek(a);
+            geek >> x;
+            y = x;
+        
+            if(x/2 == y/2) {
+                cout << x << ",";
+            }
+            
+            a = "";
+            cin >> a;
+        }
+        cout << "}";
+    }
+    else {
+        cout << "Please input a list of numbers and I will take away all of the odd numbers!";
+    }
+    
+	return 0;
+}
