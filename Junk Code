@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    char a = 33;
-    cout << a;
+    char a = '!';
+    cout << int(a);
 	return 0;
 }
 
